@@ -1,0 +1,37 @@
+<form class="form-inline">
+  <div class="form-group">
+    <div class="input-group">
+      <input ng-disabled="true" class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+      <button class="input-group-addon" (click)="d.toggle()" type="button">
+        <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+      </button>
+    </div>
+  </div>
+</form>
+
+<hr/>
+<pre>Model: {{ model | json }}</pre>
+<hr/>
+
+
+
+<h1> TABLES </h1>
+<hr>
+<table border="1">
+  <tr> 
+    <th>subject</th>
+    <th>marks</th>
+  </tr>
+  <tr>
+    <td>Mathematics</td>
+    <td rowspan="2">343</td>
+  </tr>
+  <tr>
+    <td>Science</td>
+    
+  </tr>
+  <tr>
+    <td colspan="2">absent</td>  
+  </tr>
+
+</table>
